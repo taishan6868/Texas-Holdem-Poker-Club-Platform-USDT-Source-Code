@@ -1,0 +1,10 @@
+<Main>
+    <Game>
+        <PluginConfig>
+            bPluginEnable			= 1
+            nControlCount			= 5
+            nProbability			= 100
+			sUserID					= 9001,9002
+        </PluginConfig>
+    </Game>
+</Main>
