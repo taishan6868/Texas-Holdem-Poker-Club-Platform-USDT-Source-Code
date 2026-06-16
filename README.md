@@ -1,4 +1,4 @@
-⭐ Commercial-grade poker platform | Ready for deployment
+⭐ Commercial-grade poker platform 
 # PokerClub Pro - Texas Holdem Platform | 德州扑克俱乐部完整源码 | 德州源碼 | 德州撲克源碼|德州源码|德州扑克源码|德州游戏源码|
 
 # 德州扑克俱乐部平台（支持USDT）| 德州扑克俱乐部完整源码 | USDT支付
