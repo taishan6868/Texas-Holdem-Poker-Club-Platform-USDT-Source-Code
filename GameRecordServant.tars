@@ -1,0 +1,28 @@
+#include "GameRecordProto.tars"
+#include "/home/tarsproto/XGame/Comm/JFGame.tars"
+
+/***
+* 游戏记录系统接口
+*/
+module gamerecord
+{
+    interface GameRecordServant
+    {
+		//http请求处理接口
+		int doRequest(vector<byte> reqBuf, map<string, string> extraInfo, out vector<byte> rspBuf);
+
+		//tcp请求处理接口
+		int onRequest(long lUin, string sMsgPack, string sCurServrantAddr, JFGame::TClientParam stClientParam, JFGame::UserBaseInfoExt stUserBaseInfo);
+
+		//经典场用户行为信息上报
+		int reportQSUserActInfo(ReportQSUserActInfoReq req, out ReportQSUserActInfoRsp resp);
+
+		//比赛场用户行为信息上报
+		int reportKOUserActInfo(ReportKOUserActInfoReq req, out ReportKOUserActInfoRsp resp);
+
+		int reportPrGameInfo(RoomCalStatReq req);
+
+		//AI场用户行为上报
+		int reportAIUserActInfo(ReportAIUserActInfoReq req, ReportAIUserCardInfoReq req1, out ReportAIUserActInfoRsp resp);
+    };
+}; 
